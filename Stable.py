@@ -21,7 +21,7 @@ def generate_image(prompt,model):
 image_gen_model = StableDiffusionPipeline.from_pretrained("stabilityai/stable-diffusion-2-1",torch_dtype=torch.float16,use_auth_token='Your Hugging Face Token Here').to(SD.device)
 
 
-#Here is an example of how you can use your local cache after the initial one time download of a model
+#Here is an example of how you can use your local cache after the initial one time download of a model.
 
 #image_gen_model = StableDiffusionPipeline.from_pretrained(r"C:\Users\gokul\.cache\huggingface\hub\models--stabilityai--stable-diffusion-2-1\snapshots\845609e6cf0a060d8cd837297e5c169df5bff72c",torch_dtype=torch.float16,use_auth_token='hugging_face_token_from_Huggingface_website').to(SD.device)
 
